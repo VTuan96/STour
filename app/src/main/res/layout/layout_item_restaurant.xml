@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_corner_radius"
+    android:layout_marginBottom="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_corner_radius"
+        android:id="@+id/cvItemHotel"
+        style="@style/CardView.Light">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:id="@+id/imgAvatarHotel"
+                android:scaleType="fitXY"
+                android:src="@drawable/image"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="5dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nha khach Kim Binh"
+                    android:id="@+id/txtNameHotel"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:gravity="center"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#000"/>
+
+                <RatingBar
+                    style="?android:attr/ratingBarStyleIndicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rbStar"
+                    android:layout_gravity="center"
+                    android:numStars="5"
+                    android:scaleX="0.4"
+                    android:scaleY="0.4"
+                    android:rating="3"
+                    android:stepSize="0.5"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:id="@+id/txtAddressHotel"
+                    android:text="Phường Minh Xuân Thị Xã Tuyên Quang, Phan Thiết, Tp. Tuyên Quang, Tuyên Quang, Việt Nam"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10sp"
+                        android:id="@+id/txtItemPrice"
+                        android:textColor="#F44336"
+                        android:layout_marginTop="3dp"
+                        android:text="600.000VND"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp">
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/imgViewCount"
+                            android:src="@drawable/ic_remove_red_eye_black_18dp"
+                            android:scaleX="0.6"
+                            android:scaleY="0.6"
+                            android:layout_toLeftOf="@+id/txtViewCount"
+                            android:layout_weight="7"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:textSize="10sp"
+                            android:id="@+id/txtViewCount"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginTop="7dp"
+                            android:text="3"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
